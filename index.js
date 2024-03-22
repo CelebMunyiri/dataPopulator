@@ -7,5 +7,6 @@ const pdfFile=fs.readFileSync('./UserLocation setup.pdf');
 
 pdfParse(pdfFile).then(function(data){
     console.log(data.numpages);
-    console.log(data.text);
+    //console.log(data.text);
+    console.log(data.info);
 })
